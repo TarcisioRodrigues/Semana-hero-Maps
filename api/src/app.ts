@@ -14,16 +14,16 @@ class App{
         connect()
     }
 
-initializeRoutes(){
+private initializeRoutes(){
 this.app.use('/events',this.eventRoutes.routes)
 }
-interceptionErrors(){
+private interceptionErrors(){
      this.app.use(errorMiddleware)
 }
-listen(){
+private listen(){
     this.app.listen(3333,()=>console.log("Botar pra gerar"))
 }
-middlewaresInitialize(){
+private middlewaresInitialize(){
     this.app.use(express.json())
     this.app.use(express.urlencoded({extended:true}))
 }

@@ -1,13 +1,13 @@
 import mongoose from "mongoose"
 
 export const connect=async()=>{
-    // senha:AM7l2csvFdEOFAAf
+    // senha:YytAsW5biC3fLmSy
     try{
         await mongoose.connect(
-         'mongodb+srv://root:AM7l2csvFdEOFAAf@clusterdev.7ram24a.mongodb.net/?retryWrites=true&w=majority')
+         'mongodb+srv://tarcisio:YytAsW5biC3fLmSy@cluster0.gf84b.mongodb.net/?retryWrites=true&w=majority')
          console.log("Connectado")
     }catch(error){
-
+        console.log(error)
 
     }
 }
