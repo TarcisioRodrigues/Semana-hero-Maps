@@ -1,13 +1,11 @@
-import mongoose from "mongoose"
+import mongoose from 'mongoose';
 
-export const connect=async()=>{
-    // senha:YytAsW5biC3fLmSy
-    try{
-        await mongoose.connect(
-         'mongodb+srv://tarcisio:YytAsW5biC3fLmSy@cluster0.gf84b.mongodb.net/?retryWrites=true&w=majority')
-         console.log("Connectado")
-    }catch(error){
-        console.log(error)
-
-    }
+export async function connect() {
+  try {
+    await mongoose.connect(
+      'mongodb+srv://semanaheroi:BCwHjjyHxdwP4Yrq@cluster0.t6hmb.mongodb.net/hero-tickets',
+    );
+  } catch (error) {
+    console.log('🚀 ~ file: database.ts:5 ~ connect ~ error:', error);
+  }
 }
