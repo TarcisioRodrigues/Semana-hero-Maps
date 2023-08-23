@@ -16,12 +16,12 @@ const categories = [
   },
   {
     name: "Feiras",
-    icon: "/feiras.png",
+    icon: "/musical.png",
     route: "fairs",
   },
   {
     name: "Festival",
-    icon: "/festival.png",
+    icon: "/musical.png",
     route: "festival",
   },
   {
