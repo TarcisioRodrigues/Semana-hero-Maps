@@ -1,9 +1,12 @@
-export const BannerSecondary = () => {
+import Link from "next/link";
+import { Button } from "./Form/Button";
+
+export const CardFilter = ({ event }: any) => {
   return (
-    <div className="rounded ">
-      <div className="w-full p-3 h-[150px] relative bg-black bg-opacity-25 rounded-3xl shadow bg-cover bg-center">
+    <div className="rounded mb-6 ">
+      <div className="w-full p-3 h-[150px] relative  rounded-3xl rounded-b-none  bg-cover bg-center">
         <div className=" text-white absolute top-3">
-          <p className="text-normal pb-1 font-bold">casa shoiw</p>
+          <p className="text-normal pb-1 font-bold">titulo</p>
           <div className="flex">
             <div className="mr-4 flex">
               <svg
@@ -20,7 +23,7 @@ export const BannerSecondary = () => {
                   d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
                 />
               </svg>
-              <p> </p>
+              <p>dadawdawdawd</p>
             </div>
 
             <div className="mr-4 flex">
@@ -39,7 +42,7 @@ export const BannerSecondary = () => {
                 />
               </svg>
 
-              <p>16h </p>
+              <p>h</p>
             </div>
           </div>
         </div>
@@ -66,9 +69,17 @@ export const BannerSecondary = () => {
                 />
               </svg>
 
-              <p>Casa da vovo</p>
+              <p>endereço</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-full p-3  relative bg-slate-200 rounded-3xl rounded-t-none ">
+        <p className="text-sm text-black">descrição</p>
+        <div className="flex justify-center w-2/5 mx-auto my-4">
+          <Link href={`/event-details/`}>
+            <Button title="Ver Detalhes do Evento" />
+          </Link>
         </div>
       </div>
     </div>

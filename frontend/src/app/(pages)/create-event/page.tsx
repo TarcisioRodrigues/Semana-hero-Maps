@@ -37,8 +37,8 @@ export default function CreateEvent() {
             ))}
           </div>
           <div className="mt-4">
-            <p className="text-blue text-base  font-medium  ">Valor</p>
-            <p className="text-neutral-500 text-sm font-light">
+            <p className="text-blue text-base  font-medium mb-3  ">Valor</p>
+            <p className="text-neutral-500 text-sm font-light mb-2">
               Caso seu evento seja gratuito, o campo deverá ficar vazio. Caso
               haja mais de um setor, basta adicionara seção. Se houver cupom
               promocional, basta colocar o código no campo “cupom”.
@@ -78,6 +78,25 @@ export default function CreateEvent() {
             <p className="text-neutral-500  text-sm font-light ">
               Insira um banner no formato 336x280
             </p>
+            <div className="w-full h-28 bg-zinc-300 rounded-3xl shadow">
+              <InputFile />
+            </div>
+            <p className="text-blue text-base font-medium ">Flyers</p>
+            <p className="text-neutral-500  text-sm font-light ">
+              Insira no minimo três flyers
+            </p>
+            <div className="grid grid-cols-3 gap-3 mb-3  ">
+              <div className="w-full h-28 bg-zinc-300 rounded-3xl shadow">
+                <InputFile />
+              </div>
+              <div className="w-full h-28 bg-zinc-300 rounded-3xl shadow">
+                <InputFile />
+              </div>
+              <div className="w-full h-28 bg-zinc-300 rounded-3xl shadow">
+                <InputFile />
+              </div>
+            </div>
+            <p className="text-blue text-base font-medium ">Mapa do Evento</p>
             <div className="w-full h-28 bg-zinc-300 rounded-3xl shadow">
               <InputFile />
             </div>
